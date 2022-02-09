@@ -1,0 +1,40 @@
+.cote{
+    float: left;
+    padding:25px;
+    height: 50%;
+}
+
+.gauche{
+    width: 17%;
+    height: 1550px;
+    background-color: #CFCFCF;
+}
+
+.droite{
+    width: 23%;
+    height: 1400px;
+}
+
+
+h2{
+	color:red;
+	text-align: center;
+}
+
+
+.date{
+	color:red;
+}
+
+
+.etude{
+	text-align: center;
+}
+
+.stage{text-decoration: underline;}
+
+.word{float: left;}
+
+.competences {
+    margin-bottom: 10%;
+}

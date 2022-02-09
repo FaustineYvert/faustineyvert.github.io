@@ -373,7 +373,7 @@ dl,
 form,
 .fluid-video-wrapper,
 .ss-custom-select {
-	margin-bottom: 3rem;
+	margin-bottom: 0rem;
 }
 
 /**
@@ -525,7 +525,7 @@ select {
 	padding: 1.5rem 0;
 	border: 0;
 	outline: none;
-	vertical-align: middle;
+	display:block;
 	color: #313131;
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
@@ -2615,6 +2615,7 @@ footer .copyright span:last-child::after {
 #img-ap {
 	left: 0;
 }
+
 
 
 

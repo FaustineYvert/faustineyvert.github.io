@@ -1,0 +1,513 @@
+body {
+	
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* DÉBUT FOOTER */
+footer {
+	flex-shrink: 0;
+	border-top: 1px dashed #333; /* pointillés du footer*/
+	width: 100%;
+	background: #141414; /* couleur du footer */
+	color: #FFFFFF;
+}
+.contenu-footer {
+	width: 1400px; /* écartement entre les paragraphes */ 
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 18px;
+	padding: 30px 0 100px;
+	font-family: 'Lucida Console', Monaco, monospace;
+}
+
+.bloc {
+	width: 50%;
+	margin: 0 50px;
+}
+
+/* TROIS PARTIES */
+.footer-contact h5,
+.footer-scolarite h5,
+.footer-media h5 {
+	font-size: 110%;
+	padding-bottom: 0px;
+}
+
+/* PARTIE CONTACT */
+.footer-contact p {
+	padding: 0px 0px;
+}
+
+/* SCOLARITÉ ACTUELLE */
+.footer-scolarite p {
+	padding: 0px 0px;
+}
+
+/* PARTIE RÉSEAUX */
+.liste-media {
+	list-style-type: none;
+	color: #333;
+}
+
+
+.liste-media li {
+	padding: 0px 0;
+	position: relative;
+	left: 70px; /* position des logo */
+}
+
+.liste-media a {
+	text-decoration: none;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+}
+
+.liste-media a:hover {
+	color: #e74c3c;
+}
+
+ .liste-media img {
+ 	width: 30px;
+ 	margin: 15px 15px;
+ }
+/* FIN FOOTER */
+
+
+
+/* DÉBUT NAVBAR */
+header {
+	background-image: url('../accueil/images/ben.jpg');
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-repeat: no-repeat;
+	font-family: 'Lucida Console', Monaco, monospace;
+	font-size: 13px;
+	letter-spacing: 3px;
+	display: inline-block;
+	z-index: 25;
+}
+
+
+/* NAVBAR */
+.nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: lightgrey;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 10px;
+	margin: 7px;
+	margin-top: 1%;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #141414;
+	border-radius: 5px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	margin: 1.05%;
+	color: #FFFFFF;
+	background-color: #141414;
+	border-radius: 5px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #141414;
+	margin-left: -23%;
+	margin-top: 18%;
+	border-radius: 5px;
+}
+
+.dropdown-content a {
+	color: #FFFFFF;
+	background-color: #141414;
+	display: block;
+}
+
+.zoom {
+	transition: transform 0.5s;
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	transform: scale(1.20); /* grosseur du bouton apres le passage de la souris */
+	color: #e74c3c;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+
+}
+/* FIN NAVBAR */
+
+
+/* --------------------------------------------------------------------------------- */ 
+
+/* DÉBUT GROS TITRE DE CHAQUE PAGE*/
+.page-normale {
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 200%;
+	margin-top: 350px;
+	position:relative;
+	z-index: 50;
+	font-family: 'Lucida Console', Monaco, monospace;
+}
+/* FIN GROS TITRE DE CHAQUE PAGE */
+
+/* ---------------------------------ACCUEIL------------------------------------------------ */ 
+
+/* DÉBUT DE LA PRÉSENTATION */
+.bloc-entier{
+	color: black; /* A ENLEVER APRES */	
+	margin-top: 28%;
+	margin-bottom: 5%;
+}
+
+.titre-presentation{
+	color: grey;
+	font-size: 120%;
+}
+
+.text-presentation{
+	color: black;
+	font-size: 60%;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.voir-cv{
+	background-color: #141414;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	font-size: 70%;
+	text-decoration: none;
+}
+
+.voir-cv:hover {
+	color: #e74c3c;
+}
+/* DÉBUT DE LA PRÉSENTATION */
+
+/* ----------------------------- DÉBUT BTS SIO------------------------------------------------ */ 
+
+.bloc-bts {
+	color: black; /* A ENLEVER APRES */	
+	margin-top: 28%;
+	margin-bottom: 5%;
+}
+
+.quoi-bts{
+	color: grey;
+	font-size: 100%;
+}
+
+.presentation-bts{
+	color: black;
+	font-size: 60%;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.carte-body{
+    padding-bottom:30px;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:25px;
+    margin-top:1%;
+    margin-left:1%;
+    margin-right:1%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0,0,0,0.22);
+    border-radius:15px; 
+
+}
+
+.carte-titre {
+	font-size: 30px;
+	background-color: lightgrey;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+.carte-colonne-1 {
+	width: 30%;
+	float: left;
+	margin-left: 15%;
+	font-family: 'Lucida Console', Monaco, monospace;
+	font-size: 120%;
+}
+
+.carte-colonne-2 {
+	width: 30%;
+	float: right;
+	margin-right: 10%;
+	font-family: 'Lucida Console', Monaco, monospace;
+	font-size: 120%;
+	margin-bottom: 30px;
+}
+
+.bouton-btssio{
+	background-color: #141414;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	font-size: 70%;
+	text-decoration: none;
+} 
+
+.bouton-btssio:hover{
+	color: #e74c3c;
+}
+
+/* ----------------------------- FIN BTS SIO------------------------------------------------ */
+
+/* ----------------------------- DÉBUT STAGES------------------------------------------------ */
+
+.bloc-stages {
+	margin-top: 28%;
+	margin-bottom: 5%;
+}
+
+.stages-titre {
+	color: gray;
+	font-size: 120%;
+	margin-top: 120%;
+}
+
+
+.stages-observation {
+	color: black;
+	font-size: 22px;
+	margin-bottom: -25%;
+}
+
+
+.liste-stages {
+	list-style-type: none;
+	color: black;
+	font-size: 20px;
+	margin-top: 25%;
+	padding-bottom: 50px;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:25px;
+    margin-left:10%;
+    margin-right:10%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3), 0px 15px 12px rgba(0,0,0,0.22);
+    border-radius:15px;
+}
+
+.liste-stages li {
+	padding: 0px 0;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.liste-stages a {
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+	left: 30px;
+}
+
+.liste-stages a:hover {
+	color: #e74c3c;
+}
+
+ .liste-stages img {
+ 	width: 100px;
+ 	padding-right: 25px;
+ 	margin-left: 50px
+ }
+
+/* ----------------------------- FIN STAGES------------------------------------------------ */
+
+/* -----------------------------DÉBUT CONTACT------------------------------------------------ */
+input[type=text], select, textarea {
+	color: grey;
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid black; 
+  border-radius: 5px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+
+}
+
+input[type=submit] {
+	background-color: #141414;
+	padding: 8px;
+	border-radius: 5px;
+	color: white;
+	font-size: 70%;
+	cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  color: #e74c3c;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 25%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: black;
+  font-size: 25px;
+  text-align: left;
+}
+
+/* -----------------------------FIN CONTACT------------------------------------------------ */
+
+/* ------------------------------------- DÉBUT VEILLE TECHNOLOGIQUE ---------------------------------------- */
+
+.theme {
+	margin-top: 23%;
+	font-family: 'Lucida Console', Monaco, monospace;
+	font-size: 250%
+}
+
+.realisation {
+	font-family: 'Lucida Console', Monaco, monospace;
+	font-size: 100%;
+}
+
+/* ------------------------------------- FIN VEILLE TECHNOLOGIQUE ---------------------------------------- */
+
+/* ------------------------------------- FIN MEMENTO ---------------------------------------- */
+.tableau-memento {
+	margin-top: 25%;
+	margin-left: 28%;
+	margin-bottom: 5%;
+	color: black;
+	}
+.tableau-memento:hover {
+	color: #e74c3c;
+}
+
+td{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* ------------------------------------- FIN MEMENTO ---------------------------------------- */
+
+/* ------------------------------------- DÉBUT CV ---------------------------------------- */
+
+.explication-cv {
+	margin-top: 29%;
+	
+	color: grey;
+}
+
+.btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 3%;
+}
+
+.btn:hover {
+  color: #e74c3c;
+}
+
+/* ------------------------------------- FIN CV ---------------------------------------- */
+
+/* ------------------------------------- DÉBUT AP ---------------------------------------- */
+
+.cv-html {
+	margin-top: 25%;
+	color: grey;
+}
+
+.cv-blabla {
+	font-size: 20px;
+	color: black;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+								****************
+								|| PHPMYADMIN ||
+								****************
+
+							    • SQL POUR LE PROJET MVC •
+__________________________________________________________________________________________________________________________________________________________
+
+/**************************/
+/* STRUCTURE TABLE CLIENT */
+/**************************/
+
+CREATE TABLE client (
+  id_CLIENT int(11),
+  prenom_CLIENT varchar(20),
+  nom_CLIENT varchar(20),
+  date_de_naissance_CLIENT date,
+  adresse_CLIENT varchar(50),
+  code_postal_CLIENT varchar(10),
+  ville_CLIENT varchar(20),
+  telephone_CLIENT varchar(15),
+  mail_CLIENT varchar(40),
+) PRIMARY KEY (id_CLIENT);
+
+/************************/
+/* DONNÉES TABLE CLIENT */
+/************************/
+
+INSERT INTO client (prenom_CLIENT, nom_CLIENT, date_de_naissance_CLIENT, adresse_CLIENT, code_postal_CLIENT, ville_CLIENT, telephone_CLIENT, mail_CLIENT) 
+VALUES 	('Benjamin', 'Bongage', '2002-01-13', '17 rue du pain au chocolat', '78069', 'Vairseilles', '0676394376', 'benjamin.bongage@gmail.com'),
+	('Matias', 'Rebecco', '2002-08-14', '56 rue des parapluies', '75013', 'Paris', '0734528632', 'matias.rebeco@hotmail.fr'),
+	('Jadde', 'Vingt-Son', '2002-07-23', '98 rue des sugar daddy', '75007', 'Paris', '0635694260', 'vingtaine.jade@gmail.com'),
+	('Cloais', 'Deux-sous-cent', '2000-11-21', '43 avenue des riches', '75016', 'Paris', '0607652390', 'centsous.cloais@free.fr'),
+	('Chahaut', 'Idée', '1986-03-02', '12 chemin des bubble tea', '94470', 'Crétailles', '0752083021', 'chatonlove94@gmail.com'),
+	('Jairaume', 'Deux-sous-cent', '2007-07-26', '43 avenue des riches', '75016', 'Paris', '0745793217', 'jaijai.zoudii@outlook.com'),
+	('Axaile', 'Lefromage', '2001-12-05', '7 rue des inconnus', '92880', 'Ruaille Maleméson', '0642298734', 'axou92@orange.fr'),
+	('Monsieur', 'Jaune', '1803-10-04', '99 avenue des programmeurs', '91390', 'Paix Hache Paie', '0648392093', 'couleur.jaune@free.fr');
+
+__________________________________________________________________________________________________________________________________________________________
+
+/****************************/
+/* STRUCTURE TABLE POINTURE */
+/****************************/
+
+CREATE TABLE pointure (
+  taille_POINTURE int(3),
+) PRIMARY KEY (taille_POINTURE);
+
+/**************************/
+/* DONNÉES TABLE POINTURE */
+/**************************/
+
+INSERT INTO pointure (taille_POINTURE) 
+VALUES  (34),
+	(35),
+	(36),
+	(37),
+	(38),
+	(39),
+	(40),
+	(41),
+	(42),
+	(43),
+	(44),
+	(45);
+
+__________________________________________________________________________________________________________________________________________________________
+
+/**************************/
+/* STRUCTURE TABLE TAILLE */
+/**************************/
+
+
+CREATE TABLE taille (
+  taille_VETEMENT varchar(3),
+) PRIMARY KEY (taille_VETEMENT);
+
+/************************/
+/* DONNÉES TABLE TAILLE */
+/************************/
+
+INSERT INTO taille (taille_VETEMENT) 
+VALUES  ('L'),
+	('M'),
+	('S'),
+	('XL'),
+	('XS');
+
+__________________________________________________________________________________________________________________________________________________________
+
+/****************************/
+/* STRUCTURE TABLE COMMANDE */
+/****************************/
+
+CREATE TABLE commande (
+  id_COMMANDE int(11),
+  total_COMMANDE float,
+) PRIMARY KEY (id_COMMANDE);
+
+/**************************/
+/* DONNÉES TABLE COMMANDE */
+/**************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
